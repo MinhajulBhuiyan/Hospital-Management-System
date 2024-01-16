@@ -1,0 +1,7 @@
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.exe.config
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.exe
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\bin\Debug\Hospital_Management_System.pdb
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.AssemblyReference.cache
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.csproj.CoreCompileInputs.cache
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.exe
+C:\Users\bhuiy\Desktop\Hospital_Management_System\Hospital_Management_System\obj\Debug\Hospital_Management_System.pdb
