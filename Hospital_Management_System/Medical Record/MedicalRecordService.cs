@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Hospital_Management_System
 {
-    public class MedicalRecordService : IMedicalRecordService, IMedicalRecordViewer
+    public class MedicalRecordService : IMedicalRecordService, IViewer<MedicalRecord>
     {
         private readonly string medicalRecordsFilePath = "C:\\Users\\bhuiy\\Desktop\\Hospital_Management_System\\MedicalRecords.txt";
         private readonly Dictionary<int, MedicalRecord> medicalRecords = new Dictionary<int, MedicalRecord>();
@@ -30,7 +30,7 @@ namespace Hospital_Management_System
             }
         }
 
-        public void ViewMedicalRecord(int patientId)
+        public void ViewDetails(int patientId)
         {
             var medicalRecord = RetrieveRecord(patientId);
 

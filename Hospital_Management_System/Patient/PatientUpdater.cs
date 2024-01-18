@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Hospital_Management_System
 {
-    public class PatientUpdater : IPatientUpdater
+    public class PatientUpdater : IUpdater<Patient>
     {
-        private readonly IPatientDataAccessor dataAccessor;
+        private readonly IDataAccessor<Patient> dataAccessor;
 
-        public PatientUpdater(IPatientDataAccessor dataAccessor)
+        public PatientUpdater(IDataAccessor<Patient> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
-        public void UpdatePatientInformation()
+        public void UpdateInformation()
         {
             Console.WriteLine("Update Patient Information:");
             Console.WriteLine("Enter patient ID: ");
@@ -23,7 +23,7 @@ namespace Hospital_Management_System
             }
 
             // Load existing patients
-            List<Patient> patients = dataAccessor.LoadPatients();
+            List<Patient> patients = dataAccessor.LoadData();
 
             // Find the patient with the specified ID
             Patient patientToUpdate = patients.Find(p => p.PatientId == patientId);
@@ -75,7 +75,7 @@ namespace Hospital_Management_System
             }
 
             // Save the updated patients list to the file
-            dataAccessor.SavePatients(patients);
+            dataAccessor.SaveData(patients);
 
             // Display the updated patient information
             Console.WriteLine("\nPatient information successfully updated.");

@@ -6,16 +6,16 @@ namespace Hospital_Management_System
 {
     public class AppointmentScheduler : IAppointmentScheduler
     {
-        private readonly IAppointmentDataAccessor dataAccessor;
+        private readonly IDataAccessor<Appointment> dataAccessor;
 
-        public AppointmentScheduler(IAppointmentDataAccessor dataAccessor)
+        public AppointmentScheduler(IDataAccessor<Appointment> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
         public int ScheduleAppointment(int patientId, int doctorId, string problem, DateTime appointmentDate)
         {
-            var appointments = dataAccessor.LoadAppointments();
+            var appointments = dataAccessor.LoadData();
             int appointmentId = GetNextAppointmentId(appointments);
 
             appointments.Add(new Appointment
@@ -27,7 +27,7 @@ namespace Hospital_Management_System
                 AppointmentDate = appointmentDate
             });
 
-            dataAccessor.SaveAppointments(appointments);
+            dataAccessor.SaveData(appointments);
 
             return appointmentId; // Return the generated appointment ID
         }
@@ -36,13 +36,13 @@ namespace Hospital_Management_System
 
         public void CancelAppointment(int appointmentId)
         {
-            var appointments = dataAccessor.LoadAppointments();
+            var appointments = dataAccessor.LoadData();
             var appointment = appointments.Find(a => a.AppointmentId == appointmentId);
 
             if (appointment != null)
             {
                 appointments.Remove(appointment);
-                dataAccessor.SaveAppointments(appointments);
+                dataAccessor.SaveData(appointments);
             }
             else
             {
@@ -52,13 +52,13 @@ namespace Hospital_Management_System
 
         public void RescheduleAppointment(int appointmentId, DateTime newDate)
         {
-            var appointments = dataAccessor.LoadAppointments();
+            var appointments = dataAccessor.LoadData();
             var appointment = appointments.Find(a => a.AppointmentId == appointmentId);
 
             if (appointment != null)
             {
                 appointment.AppointmentDate = newDate;
-                dataAccessor.SaveAppointments(appointments);
+                dataAccessor.SaveData(appointments);
             }
             else
             {

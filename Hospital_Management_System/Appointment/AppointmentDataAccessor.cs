@@ -1,15 +1,14 @@
-﻿// AppointmentDataAccessor.cs
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 
 namespace Hospital_Management_System
 {
-    public class AppointmentDataAccessor : IAppointmentDataAccessor
+    public class AppointmentDataAccessor : IDataAccessor<Appointment>
     {
         private string appointmentsFilePath = "C:\\Users\\bhuiy\\Desktop\\Hospital_Management_System\\Appointments.txt";
 
-        public List<Appointment> LoadAppointments()
+        public List<Appointment> LoadData()
         {
             List<Appointment> loadedAppointments = new List<Appointment>();
             if (File.Exists(appointmentsFilePath))
@@ -39,11 +38,11 @@ namespace Hospital_Management_System
             return loadedAppointments;
         }
 
-        public void SaveAppointments(List<Appointment> appointmentsToSave)
+        public void SaveData(List<Appointment> dataToSave)
         {
             using (StreamWriter writer = new StreamWriter(appointmentsFilePath))
             {
-                foreach (var appointment in appointmentsToSave)
+                foreach (var appointment in dataToSave)
                 {
                     writer.WriteLine($"{appointment.AppointmentId},{appointment.PatientId},{appointment.DoctorId},{appointment.AppointmentDate},{appointment.Problem}");
                 }

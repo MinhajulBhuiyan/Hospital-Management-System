@@ -4,16 +4,16 @@ namespace Hospital_Management_System
 {
     public class DoctorViewer : IViewer<Doctor>
     {
-        private readonly IDoctorDataAccessor dataAccessor;
+        private readonly IDataAccessor<Doctor> dataAccessor;
 
-        public DoctorViewer(IDoctorDataAccessor dataAccessor)
+        public DoctorViewer(IDataAccessor<Doctor> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
         public void ViewDetails(int doctorId)
         {
-            var doctors = dataAccessor.LoadDoctors();
+            var doctors = dataAccessor.LoadData();
             var doctor = doctors.Find(d => d.DoctorId == doctorId);
 
             if (doctor != null)

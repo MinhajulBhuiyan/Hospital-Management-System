@@ -48,26 +48,22 @@
     <Compile Include="Appointment\AppointmentManagement.cs" />
     <Compile Include="Appointment\AppointmentScheduler.cs" />
     <Compile Include="Appointment\AppointmentViewer.cs" />
-    <Compile Include="Appointment\IAppointmentDataAccessor.cs" />
     <Compile Include="Doctor\Doctor.cs" />
     <Compile Include="Doctor\DoctorDataAccessor.cs" />
     <Compile Include="Doctor\DoctorManagement.cs" />
     <Compile Include="Doctor\DoctorRegistrar.cs" />
     <Compile Include="Doctor\DoctorUpdater.cs" />
     <Compile Include="Doctor\DoctorViewer.cs" />
-    <Compile Include="Doctor\IDoctorDataAccessor.cs" />
-    <Compile Include="Doctor\IDoctorUpdater.cs" />
-    <Compile Include="ExceptionHandler.cs" />
     <Compile Include="HospitalOperations.cs" />
     <Compile Include="Appointment\IAppointmentScheduler.cs" />
     <Compile Include="Appointment\IAppointmentViewer.cs" />
+    <Compile Include="IDataAccessor.cs" />
     <Compile Include="IRegistrar.cs" />
+    <Compile Include="IUpdater.cs" />
     <Compile Include="IViewer.cs" />
     <Compile Include="Medical Record\IMedicalRecordService.cs" />
-    <Compile Include="Medical Record\IMedicalRecordViewer.cs" />
-    <Compile Include="Patient\IPatientDataAccessor.cs" />
-    <Compile Include="Patient\IPatientUpdater.cs" />
     <Compile Include="Medical Record\MedicalRecord.cs" />
+    <Compile Include="Medical Record\MedicalRecordManager.cs" />
     <Compile Include="Medical Record\MedicalRecordService.cs" />
     <Compile Include="Medical Record\MedicalRecordViewer.cs" />
     <Compile Include="Patient\Patient.cs" />
@@ -78,7 +74,6 @@
     <Compile Include="Patient\PatientViewer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

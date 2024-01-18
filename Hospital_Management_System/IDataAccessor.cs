@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital_Management_System
 {
-    public interface IPatientDataAccessor
+    public interface IDataAccessor<T>
     {
-        List<Patient> LoadPatients();
-        void SavePatients(List<Patient> patients);
+        List<T> LoadData();
+        void SaveData(List<T> data);
     }
 }

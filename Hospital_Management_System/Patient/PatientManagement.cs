@@ -6,10 +6,10 @@ namespace Hospital_Management_System
     public class PatientManagement
     {
         private readonly IRegistrar<Patient> patientRegistrar;
-        private readonly IPatientUpdater patientUpdater;
+        private readonly IUpdater<Patient> patientUpdater;
         private readonly IViewer<Patient> patientViewer;
 
-        public PatientManagement(IRegistrar<Patient> patientRegistrar, IPatientUpdater patientUpdater, IViewer<Patient> patientViewer)
+        public PatientManagement(IRegistrar<Patient> patientRegistrar, IUpdater<Patient> patientUpdater, IViewer<Patient> patientViewer)
         {
             this.patientRegistrar = patientRegistrar;
             this.patientUpdater = patientUpdater;
@@ -35,7 +35,7 @@ namespace Hospital_Management_System
                     break;
 
                 case "2":
-                    patientUpdater.UpdatePatientInformation();
+                    patientUpdater.UpdateInformation();
                     break;
 
                 case "3":

@@ -3,7 +3,7 @@ using System;
 
 namespace Hospital_Management_System
 {
-    public class MedicalRecordViewer : IMedicalRecordViewer
+    public class MedicalRecordViewer : IViewer<MedicalRecord>
     {
         private readonly IMedicalRecordService medicalRecordService;
 
@@ -12,7 +12,7 @@ namespace Hospital_Management_System
             this.medicalRecordService = medicalRecordService;
         }
 
-        public void ViewMedicalRecord(int patientId)
+        public void ViewDetails(int patientId)
         {
             var medicalRecord = medicalRecordService.RetrieveRecord(patientId);
 

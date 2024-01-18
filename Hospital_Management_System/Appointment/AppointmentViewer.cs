@@ -6,16 +6,16 @@ namespace Hospital_Management_System
 {
     public class AppointmentViewer : IAppointmentViewer
     {
-        private readonly IAppointmentDataAccessor dataAccessor;
+        private readonly IDataAccessor<Appointment> dataAccessor;
 
-        public AppointmentViewer(IAppointmentDataAccessor dataAccessor)
+        public AppointmentViewer(IDataAccessor<Appointment> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
         public void ViewAppointmentDetails(int appointmentId)
         {
-            var appointments = dataAccessor.LoadAppointments();
+            var appointments = dataAccessor.LoadData();
             var appointment = appointments.Find(a => a.AppointmentId == appointmentId);
 
             if (appointment != null)
@@ -34,7 +34,7 @@ namespace Hospital_Management_System
 
         public void ViewAppointments(DateTime date)
         {
-            var appointments = dataAccessor.LoadAppointments();
+            var appointments = dataAccessor.LoadData();
             var filteredAppointments = appointments.FindAll(a => a.AppointmentDate.Date == date.Date);
 
             if (filteredAppointments.Count > 0)

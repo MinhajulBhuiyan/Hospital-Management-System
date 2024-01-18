@@ -5,23 +5,23 @@ namespace Hospital_Management_System
 {
     public class PatientRegistrar : IRegistrar<Patient>
     {
-        private readonly IPatientDataAccessor dataAccessor;
+        private readonly IDataAccessor<Patient> dataAccessor;
 
-        public PatientRegistrar(IPatientDataAccessor dataAccessor)
+        public PatientRegistrar(IDataAccessor<Patient> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
         public void Register(Patient patient)
         {
-            List<Patient> patients = dataAccessor.LoadPatients();
+            List<Patient> patients = dataAccessor.LoadData();
 
             int nextPatientId = GetNextPatientId(patients);
             patient.PatientId = nextPatientId;
 
             patients.Add(patient);
 
-            dataAccessor.SavePatients(patients);
+            dataAccessor.SaveData(patients);
         }
 
         private int GetNextPatientId(List<Patient> patients)

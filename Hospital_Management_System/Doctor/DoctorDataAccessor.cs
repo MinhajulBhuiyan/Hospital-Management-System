@@ -4,11 +4,11 @@ using System.IO;
 
 namespace Hospital_Management_System
 {
-    public class DoctorDataAccessor : IDoctorDataAccessor
+    public class DoctorDataAccessor : IDataAccessor<Doctor>
     {
         private string doctorsFilePath = "C:\\Users\\bhuiy\\Desktop\\Hospital_Management_System\\Doctors.txt";
 
-        public List<Doctor> LoadDoctors()
+        public List<Doctor> LoadData()
         {
             List<Doctor> loadedDoctors = new List<Doctor>();
             if (File.Exists(doctorsFilePath))
@@ -38,11 +38,11 @@ namespace Hospital_Management_System
             return loadedDoctors;
         }
 
-        public void SaveDoctors(List<Doctor> doctorsToSave)
+        public void SaveData(List<Doctor> dataToSave)
         {
             using (StreamWriter writer = new StreamWriter(doctorsFilePath))
             {
-                foreach (var doctor in doctorsToSave)
+                foreach (var doctor in dataToSave)
                 {
                     writer.WriteLine($"{doctor.DoctorId},{doctor.Name},{doctor.Age},{doctor.Gender},{doctor.Specialization},{doctor.Details}");
                 }

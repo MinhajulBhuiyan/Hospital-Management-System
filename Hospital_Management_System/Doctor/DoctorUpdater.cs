@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace Hospital_Management_System
 {
-    public class DoctorUpdater : IDoctorUpdater
+    public class DoctorUpdater : IUpdater<Doctor>
     {
-        private readonly IDoctorDataAccessor dataAccessor;
+        private readonly IDataAccessor<Doctor> dataAccessor;
 
-        public DoctorUpdater(IDoctorDataAccessor dataAccessor)
+        public DoctorUpdater(IDataAccessor<Doctor> dataAccessor)
         {
             this.dataAccessor = dataAccessor;
         }
 
-        public void UpdateDoctorInformation()
+        public void UpdateInformation()
         {
             // Load existing doctors
-            List<Doctor> doctors = dataAccessor.LoadDoctors();
+            List<Doctor> doctors = dataAccessor.LoadData();
 
             // Display the list of doctors
             Console.WriteLine("List of Doctors:");
@@ -82,7 +82,7 @@ namespace Hospital_Management_System
             }
 
             // Save the updated doctors list to the file
-            dataAccessor.SaveDoctors(doctors);
+            dataAccessor.SaveData(doctors);
 
             // Display the updated doctor information
             Console.WriteLine("\nDoctor information successfully updated.");

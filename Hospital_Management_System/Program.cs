@@ -15,14 +15,14 @@ namespace Hospital_Management_System
             var doctorViewer = new DoctorViewer(new DoctorDataAccessor());
             var appointmentViewer = new AppointmentViewer(new AppointmentDataAccessor());
             var appointmentScheduler = new AppointmentScheduler(new AppointmentDataAccessor());
+            var medicalRecordService = new MedicalRecordService(); 
 
             var hospitalOperations = new HospitalOperations(
-            patientRegistrar, patientUpdater, patientViewer,
-            doctorRegistrar, doctorUpdater, doctorViewer,
-            appointmentScheduler, appointmentViewer
+                patientRegistrar, patientUpdater, patientViewer,
+                doctorRegistrar, doctorUpdater, doctorViewer,
+                appointmentScheduler, appointmentViewer,
+                medicalRecordService
             );
-
-
 
             hospitalOperations.Execute();
         }
