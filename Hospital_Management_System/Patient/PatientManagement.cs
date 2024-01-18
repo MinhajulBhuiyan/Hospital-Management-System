@@ -5,11 +5,11 @@ namespace Hospital_Management_System
 
     public class PatientManagement
     {
-        private readonly IPatientRegistrar patientRegistrar;
+        private readonly IRegistrar<Patient> patientRegistrar;
         private readonly IPatientUpdater patientUpdater;
-        private readonly IPatientViewer patientViewer;
+        private readonly IViewer<Patient> patientViewer;
 
-        public PatientManagement(IPatientRegistrar patientRegistrar, IPatientUpdater patientUpdater, IPatientViewer patientViewer)
+        public PatientManagement(IRegistrar<Patient> patientRegistrar, IPatientUpdater patientUpdater, IViewer<Patient> patientViewer)
         {
             this.patientRegistrar = patientRegistrar;
             this.patientUpdater = patientUpdater;
@@ -31,7 +31,7 @@ namespace Hospital_Management_System
             switch (patientChoice)
             {
                 case "1":
-                    patientRegistrar.RegisterPatient(CreatePatient());
+                    patientRegistrar.Register(CreatePatient());
                     break;
 
                 case "2":

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Hospital_Management_System
 {
-    public class PatientRegistrar : IPatientRegistrar
+    public class PatientRegistrar : IRegistrar<Patient>
     {
         private readonly IPatientDataAccessor dataAccessor;
 
@@ -12,7 +12,7 @@ namespace Hospital_Management_System
             this.dataAccessor = dataAccessor;
         }
 
-        public void RegisterPatient(Patient patient)
+        public void Register(Patient patient)
         {
             List<Patient> patients = dataAccessor.LoadPatients();
 

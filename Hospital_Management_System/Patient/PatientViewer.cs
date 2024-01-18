@@ -2,7 +2,7 @@
 
 namespace Hospital_Management_System
 {
-    public class PatientViewer : IPatientViewer
+    public class PatientViewer : IViewer<Patient>
     {
         private readonly IPatientDataAccessor dataAccessor;
 
@@ -20,7 +20,7 @@ namespace Hospital_Management_System
             {
                 Console.WriteLine($"Patient ID: {patient.PatientId}");
                 Console.WriteLine($"Name: {patient.Name}");
-                Console.WriteLine($"Age: {patient.Age}");  
+                Console.WriteLine($"Age: {patient.Age}");
                 Console.WriteLine($"Address: {patient.Address}");
                 Console.WriteLine($"Gender: {patient.Gender}");
                 Console.WriteLine($"Description: {patient.Description}");

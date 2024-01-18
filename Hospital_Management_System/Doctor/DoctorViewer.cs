@@ -2,7 +2,7 @@
 
 namespace Hospital_Management_System
 {
-    public class DoctorViewer : IDoctorViewer
+    public class DoctorViewer : IViewer<Doctor>
     {
         private readonly IDoctorDataAccessor dataAccessor;
 
@@ -11,10 +11,11 @@ namespace Hospital_Management_System
             this.dataAccessor = dataAccessor;
         }
 
-        public void ViewDetails(int doctorId) // Change method name to ViewDetails
+        public void ViewDetails(int doctorId)
         {
             var doctors = dataAccessor.LoadDoctors();
             var doctor = doctors.Find(d => d.DoctorId == doctorId);
+
             if (doctor != null)
             {
                 Console.WriteLine($"Doctor ID: {doctor.DoctorId}");

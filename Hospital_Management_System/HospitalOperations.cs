@@ -9,12 +9,12 @@ namespace Hospital_Management_System
         private readonly AppointmentManagement appointmentManagement;
 
         public HospitalOperations(
-        IPatientRegistrar patientRegistrar,
+        IRegistrar<Patient> patientRegistrar,
         IPatientUpdater patientUpdater,
-        IPatientViewer patientViewer,
-        IDoctorRegistrar doctorRegistrar,
+        IViewer<Patient> patientViewer,
+        IRegistrar<Doctor> doctorRegistrar,
         IDoctorUpdater doctorUpdater,
-        IDoctorViewer doctorViewer,
+        IViewer<Doctor> doctorViewer,
         IAppointmentScheduler appointmentScheduler,
         IAppointmentViewer appointmentViewer)
         {
