@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hospital_Management_System.Patient" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAQAgAACAAEAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Patient\Patient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.PatientDataAccessor" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Patient\PatientDataAccessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.PatientManagement" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAgAAAAEAAAAAAAAQAAAAAAAAAAAKgAAAAAA=</HashCode>
+      <FileName>Patient\PatientManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.PatientRegistrar" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAABAAAA=</HashCode>
+      <FileName>Patient\PatientRegistrar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.PatientUpdater" Collapsed="true">
+    <Position X="6.25" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAIAAAAAAAABAAAAAAAAAMoAAAAAAAAQ=</HashCode>
+      <FileName>Patient\PatientUpdater.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.PatientViewer" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Patient\PatientViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.Doctor" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAACAAEAAAAQAAAACAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Doctor\Doctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.DoctorDataAccessor" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAwAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doctor\DoctorDataAccessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.DoctorManagement" Collapsed="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAEABAAAAAIAAECAAgAAAAAAAAA=</HashCode>
+      <FileName>Doctor\DoctorManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.DoctorRegistrar" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABCAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Doctor\DoctorRegistrar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.DoctorUpdater" Collapsed="true">
+    <Position X="5" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAYAAAAAAAABAAAAAAAAAMAAABAAAAAQ=</HashCode>
+      <FileName>Doctor\DoctorUpdater.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.DoctorViewer" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Doctor\DoctorViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.Appointment" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAQAAAAAAAAAAAAAAAAgCQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Appointment\Appointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.AppointmentDataAccessor" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Appointment\AppointmentDataAccessor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.AppointmentManagement" Collapsed="true">
+    <Position X="2" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAKAAAAAAAAAAAAAAAAAAAAAAAABAACAAAAAA=</HashCode>
+      <FileName>Appointment\AppointmentManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.AppointmentScheduler" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYAAAAAAAAAAAAAAgAAAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>Appointment\AppointmentScheduler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.AppointmentViewer" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Appointment\AppointmentViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.MedicalRecord" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Medical Record\MedicalRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.MedicalRecordManager" Collapsed="true">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAACAAAEAAAAIAAAAIAAAAAA=</HashCode>
+      <FileName>Medical Record\MedicalRecordManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hospital_Management_System.MedicalRecordService" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAQBAAAAACAAAAAAgQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Medical Record\MedicalRecordService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hospital_Management_System.MedicalRecordViewer" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Medical Record\MedicalRecordViewer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Hospital_Management_System.IUpdater&lt;T&gt;" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>IUpdater.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital_Management_System.IViewer&lt;T&gt;" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IViewer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital_Management_System.IRegistrar&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRegistrar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital_Management_System.IDataAccessor&lt;T&gt;" Collapsed="true">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDataAccessor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital_Management_System.IAppointmentScheduler" Collapsed="true">
+    <Position X="3.5" Y="5.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Appointment\IAppointmentScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hospital_Management_System.IMedicalRecordService" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Medical Record\IMedicalRecordService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Hospital_Management_System.Gender" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Patient\Patient.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,1 +1,4 @@
-1,minhaj,22,Female,heart,gjhg
+1,Dr Minhaj,33,Male,Cardiac Specialized,Cardiac Specialized
+2,Dr Rahim,44,Male,Gastroenterologist,gastroenterologist
+3,Dr Karim,32,Male,Urologist,Urologist
+4,Dr Jim,42,Male,Neurologist,Neurologist

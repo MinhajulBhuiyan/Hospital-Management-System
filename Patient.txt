@@ -1,8 +1,8 @@
-1,minhaj,12,Male,dsfsf,dfsf
-2,Alif,21,Others,khulna,dfjdsfjdasfd
-3,Alif,22,Male,KHulna,dfjgndsfndsf
-4,hamim,22,Male,dsfdasf,dsafdasf
-5,dds,12,Others,fd,dfds
-6,name,12,Male,dfsf,dfds
-7,fnfjnds,12,Male,dfds,dsfa
-8,alif,56,Male,gazapur,diarrhea
+1,Minhaj,21,Male,Dhaka,Heart Problem
+2,Alif,20,Male,Khulna,Fever
+3,Sayad,34,Male,Faridpur,Caugh
+4,Labib,44,Male,Sylhet,Skin problem
+5,Oni,12,Male,Chattogram,Diabetes
+6,Sadia,23,Male,Gazipur,Overweight
+7,Shahnaz,54,Male,Diabetes,Dhaka
+8,Rifaf,18,Male,Dhaka,Bone Fracture

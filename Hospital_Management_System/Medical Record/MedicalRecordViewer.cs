@@ -1,5 +1,4 @@
-﻿// MedicalRecordViewer.cs
-using System;
+﻿using System;
 
 namespace Hospital_Management_System
 {
